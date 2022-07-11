@@ -1,0 +1,15 @@
+<ng-container *ngIf="products; else loading">
+  <app-dumb
+    *ngFor="let product of products"
+    [product]="product"
+    [isAmountShown]="true"
+    [isRemoveBtnShown]="true"
+    (removeFromCart)="removeFromCart(product.id)"
+    (plusProduct)="plusProduct(product.id)"
+    (minusProduct)="minusProduct(product.id)">
+  </app-dumb>
+</ng-container>
+
+<ng-template #loading>
+  <p>Loading...</p>
+</ng-template>
