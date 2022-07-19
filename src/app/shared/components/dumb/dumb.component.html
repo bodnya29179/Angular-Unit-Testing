@@ -1,0 +1,24 @@
+<h1>{{ product.name }}</h1>
+
+<p>${{ product.price }}</p>
+
+<div *ngIf="isAmountShown">
+  <button
+    class="amount-btn minus-btn"
+    [disabled]="product.amount === 0"
+    (click)="minusProduct.emit()">
+    <span> - </span>
+  </button>
+
+  <span>{{ product.amount }}</span>
+
+  <button
+    class="amount-btn plus-btn"
+    (click)="plusProduct.emit()">
+    <span> + </span>
+  </button>
+</div>
+
+<button *ngIf="isAddBtnShown" (click)="addToCart.emit()">Add to cart</button>
+
+<button *ngIf="isRemoveBtnShown" (click)="removeFromCart.emit()">Remove from cart</button>
