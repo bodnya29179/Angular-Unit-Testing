@@ -7,7 +7,7 @@ describe('ConvertToUpperCasePipe', () => {
     pipeUnderTest = new ConvertToUpperCasePipe();
   })
 
-  it('should create the instance of pipe', () => {
+  it('should create an instance of the pipe', () => {
     expect(pipeUnderTest).toBeTruthy();
   });
 
