@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { take, takeUntil } from 'rxjs/operators';
-import { IProduct } from '../../interfaces/index';
-import { ProductFacadeService } from '../../services/index';
+import { IProduct } from '../../interfaces';
+import { ProductFacadeService } from '../../services';
 
 @Component({
   selector: 'app-smart',

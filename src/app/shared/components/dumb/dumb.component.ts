@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
-import { IProduct } from '../../interfaces/index';
+import { IProduct } from '../../interfaces';
 
 @Component({
   selector: 'app-dumb',

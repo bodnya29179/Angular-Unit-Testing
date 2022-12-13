@@ -1,4 +1,4 @@
-import { IProduct } from '../../interfaces/index';
+import { IProduct } from '../../interfaces';
 import { CalculateTotalPricePipe } from './calculate-total-price.pipe';
 
 const enum Currency {

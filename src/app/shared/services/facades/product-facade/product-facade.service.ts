@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IProduct } from '../../../interfaces/index';
-import { ProductService } from '../../http/index';
+import { IProduct } from '../../../interfaces';
+import { ProductService } from '../../http';
 
 @Injectable()
 export class ProductFacadeService {
